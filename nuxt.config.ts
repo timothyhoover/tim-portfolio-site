@@ -12,4 +12,10 @@ export default defineNuxtConfig({
       },
     },
   },
+  vite: {
+    logLevel: 'info',
+    optimizeDeps: {
+      include: ['vue'],
+    },
+  },
 })
