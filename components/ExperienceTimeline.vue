@@ -1,6 +1,6 @@
 <template lang="pug">
 div(class='flex w-full h-auto mb-5')
-  div(class='h-full w-3/12 text-center relative')
+  div(class='h-full text-center relative')
     div(class='h-full w-full pt-4 lg:pt-6 xl:pt-8')
       div(class='text-xs font-semibold') {{ job.year }}
       hr(class='border-l-2 border-primary-green h-4/5 absolute left-1/2 mt-5')
