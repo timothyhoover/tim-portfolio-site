@@ -144,7 +144,7 @@ main(class='flex flex-col justify-center items-center')
           img(src="../assets/img/webpack-logo.png" class="skills-logo")
           h3(class="font-semibold") Webpack
         div(class="flex flex-col items-center justify-center")
-          img(src="../assets/img/bash.png" class="skills-logo")
+          img(src="../assets/img/vite-logo.svg" class="skills-logo")
           h3(class="font-semibold") Vite
     // design / creative
     div(class="skills-card")
@@ -152,16 +152,16 @@ main(class='flex flex-col justify-center items-center')
         span Design / Creative
         img(src="../assets/img/creative@2x.png" class="w-[35px] absolute left-[260px] bottom-[15px]")
       div(class="flex space-x-8")
-        div(class="flex flex-col items-center justify-center")
+        div(class="flex flex-col items-center")
           img(src="../assets/img/xd-logo.svg" class="skills-logo")
           h3(class="font-semibold") Adobe XD
-        div(class="flex flex-col items-center justify-center")
+        div(class="flex flex-col items-center")
           img(src="../assets/img/illustrator-logo.svg" class="skills-logo")
           h3(class="font-semibold") Illustrator
-        div(class="flex flex-col items-center justify-center")
+        div(class="flex flex-col items-center")
           img(src="../assets/img/photoshop-logo.svg" class="skills-logo")
           h3(class="font-semibold") PhotoShop
-        div(class="flex flex-col items-center justify-center")
+        div(class="flex flex-col items-center")
           img(src="../assets/img/premiere-logo.svg" class="skills-logo")
           h3(class="font-semibold") Premiere Pro
 
