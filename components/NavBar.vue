@@ -1,7 +1,7 @@
 <template lang="pug">
 div(class="z-30 relative")
   div(:class='!menu.mobileMenu ? "hidden" : ""' @click='menu.mobileMenu = false' class="md:hidden w-screen h-screen bg-black bg-opacity-25 absolute link")
-div(aria-roledescription="mobile menu", class="relative min-h-screen md:flex justify-end")
+div(aria-roledescription="mobile menu", class="relative md:flex h-screen overflow-hidden")
   // mobile menu bar
   div(class="bg-white shadow-md text-gray-100 flex justify-between items-center md:hidden fixed w-full h-16 z-50")
     button(class="p-4" @click='toggleMobileNav')
@@ -11,7 +11,7 @@ div(aria-roledescription="mobile menu", class="relative min-h-screen md:flex jus
       h1(class="text-primary-blue text-xl font-semibold") Tim Hoover
       h2(class="font-bold text-lg") Full-Stack Engineer
         span(class="text-primary-blue") .
-  header(:class='!menu.mobileMenu ? "-translate-x-full" : ""' class='flex flex-col items-center bg-white shadow-md h-screen w-4/12 md:w-3/12 xl:w-2/12 space-y-6 pt-10 fixed inset-y-0 left-0 transform md:translate-x-0 transition duration-500 ease-in-out z-50')
+  header(:class='!menu.mobileMenu ? "-translate-x-full" : ""' class='shadow-md w-64 space-y-6 py-7 absolute inset-y-0 left-0 transform bg-white md:relative md:translate-x-0 transition duration-200 ease-in-out z-50')
     // logo
     div(class="hidden lg:flex flex-col items-center w-full")
       h1(class="text-primary-blue text-xl font-semibold w-7/12 mb-4 ml-1") Tim Hoover
@@ -57,7 +57,7 @@ div(aria-roledescription="mobile menu", class="relative min-h-screen md:flex jus
             path(d='M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z')
             path(d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z')
           span(class="self-end") Contact
-  div(class="flex w-full md:w-8/12 xl:w-9/12 py-36 md:py-14")
+  div(class="flex-1 p-10 h-screen overflow-y-auto")
     slot
 </template>
 

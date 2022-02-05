@@ -16,6 +16,14 @@
   .nav-link {
     @apply h-full flex space-x-2 hover:bg-gray-200 w-full pl-2 md:pl-5 xl:pl-10 py-4 transition duration-150 ease-in-out;
   }
+
+  .skills-logo {
+    @apply h-20 w-20 mb-3;
+  }
+
+  .skills-card {
+    @apply shadow-lg rounded-lg p-10;
+  }
 }
 
 @layer base {
