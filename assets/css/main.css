@@ -14,7 +14,7 @@
   }
 
   .nav-link {
-    @apply h-full flex space-x-2 hover:bg-gray-200 w-full pl-10 py-4 transition duration-150 ease-in-out;
+    @apply h-full flex space-x-2 hover:bg-gray-200 w-full pl-2 md:pl-5 xl:pl-10 py-4 transition duration-150 ease-in-out;
   }
 }
 

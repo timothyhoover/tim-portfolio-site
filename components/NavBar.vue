@@ -11,7 +11,7 @@ div(aria-roledescription="mobile menu", class="relative min-h-screen md:flex jus
       h1(class="text-primary-blue text-xl font-semibold") Tim Hoover
       h2(class="font-bold text-lg") Full-Stack Engineer
         span(class="text-primary-blue") .
-  header(:class='!menu.mobileMenu ? "-translate-x-full" : ""' class='flex flex-col items-center bg-white shadow-md h-screen w-4/12 md:w-2/12 space-y-6 pt-10 fixed inset-y-0 left-0 transform md:translate-x-0 transition duration-500 ease-in-out z-50')
+  header(:class='!menu.mobileMenu ? "-translate-x-full" : ""' class='flex flex-col items-center bg-white shadow-md h-screen w-4/12 md:w-3/12 xl:w-2/12 space-y-6 pt-10 fixed inset-y-0 left-0 transform md:translate-x-0 transition duration-500 ease-in-out z-50')
     // logo
     div(class="hidden lg:flex flex-col items-center w-full")
       h1(class="text-primary-blue text-xl font-semibold w-7/12 mb-4 ml-1") Tim Hoover
@@ -23,7 +23,7 @@ div(aria-roledescription="mobile menu", class="relative min-h-screen md:flex jus
       span(class="link") Español
     // links
     nav(class="flex flex-col items-center w-full pt-2")
-      div(class="flex flex-col items-center text-sm font-semibold w-full")
+      div(class="flex flex-col items-center text-xs md:text-sm font-semibold w-full")
         nuxt-link(to="/" active-class="border-l-4 border-primary-blue bg-gray-100" class="nav-link")
           svg(xmlns='http://www.w3.org/2000/svg', class='h-[30px] w-[30px]', viewBox='0 0 20 20', fill='currentColor')
             path(fill-rule='evenodd', d='M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z', clip-rule='evenodd')

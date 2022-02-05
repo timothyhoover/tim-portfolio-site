@@ -19,6 +19,4 @@ div(class='group flex flex-col rounded-md shadow-lg w-72 h-72 sm:w-60 sm:h-60 lg
     h3(class='group-hover:opacity-0 text-6xl font-medium transform translate-y-7 -translate-x-6 z-50 transition duration-200 ease-in-out absolute') 0
       span(class='text-primary-green') 1
     h2(class='px-4 py-2 text-xl font-medium w-full text-right') Evaly
-
-
 </template>
