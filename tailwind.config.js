@@ -1,5 +1,3 @@
-const colors = require('tailwindcss/colors')
-
 module.exports = {
   content: [
     './components/**/*.{vue,js}',
@@ -16,7 +14,7 @@ module.exports = {
         body: ['Newsreader', 'serif'],
       },
       colors: {
-        primary: {
+        tim: {
           blue: '#66c3ff',
           green: '#acd7b7',
           pink: '#d4afb9',
@@ -27,10 +25,5 @@ module.exports = {
       },
     },
   },
-  daisyui: {
-    styled: true,
-    themes: false,
-    rtl: false,
-  },
-  plugins: [require('@tailwindcss/forms'), require('daisyui')],
+  plugins: [require('@tailwindcss/forms')],
 }

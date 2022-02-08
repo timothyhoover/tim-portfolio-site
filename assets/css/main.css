@@ -9,29 +9,116 @@
     @apply cursor-pointer;
   }
 
-  .button {
-    @apply p-2 text-xs md:text-sm bg-gradient-to-b from-yellow-200 to-yellow-400 border border-yellow-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 active:from-yellow-500;
-  }
-
   .nav-link {
     @apply h-full flex space-x-2 hover:bg-gray-200 w-full pl-2 md:pl-5 xl:pl-10 py-4 transition duration-150 ease-in-out;
   }
 
   .skills-logo {
-    @apply h-20 w-20 mb-3;
+    @apply h-14 w-14 xl:h-20 xl:w-20 mb-3;
   }
 
   .skills-card {
     @apply shadow-lg rounded-lg p-10;
   }
+
+  .skill-text {
+    @apply font-semibold text-center text-xs lg:text-sm;
+  }
 }
 
-@layer base {
-  p {
-    @apply font-body;
-  }
+.btn {
+  @apply font-medium flex items-center justify-center cursor-pointer shadow hover:shadow-lg rounded-md;
+}
 
-  * {
-    @apply text-primary-dark;
-  }
+.btn-primary {
+  @apply font-medium flex items-center justify-center cursor-pointer shadow hover:shadow-lg rounded-md text-white bg-tim-blue;
+}
+
+.btn-success {
+  @apply font-medium flex items-center justify-center cursor-pointer shadow hover:shadow-lg rounded-md bg-tim-green;
+}
+
+.btn-danger {
+  @apply font-medium flex items-center justify-center cursor-pointer shadow hover:shadow-lg rounded-md bg-red-500;
+}
+
+.btn-warning {
+  @apply font-medium flex items-center justify-center cursor-pointer shadow hover:shadow-lg rounded-md bg-yellow-200;
+}
+
+.btn-info {
+  @apply font-medium flex items-center justify-center cursor-pointer shadow hover:shadow-lg rounded-md bg-blue-400;
+}
+
+.btn-outline {
+  @apply border-2 bg-transparent transition duration-100 ease-in-out;
+}
+
+/* Field */
+
+.field-label {
+  @apply block text-sm font-bold mb-2;
+}
+
+.field-danger {
+  @apply text-red-500;
+}
+
+/* Input */
+
+.input-primary {
+  @apply px-2 py-2 h-12 leading-normal block w-full text-gray-800 bg-white rounded text-left placeholder-gray-500 border border-gray-400 focus:ring-1 focus:ring-tim-blue focus:border-tim-blue focus:outline-none focus:ring-opacity-50;
+}
+
+.input-danger {
+  @apply px-2 py-2 h-12 leading-normal block w-full text-gray-800 bg-white rounded text-left placeholder-gray-500 border border-red-600 focus:ring-2 visited:ring-0 focus:border-red-500 focus:outline-none focus:ring-opacity-50;
+}
+
+/* Switch */
+
+.switch {
+  @apply bg-black;
+}
+
+.switch-label {
+  @apply hidden;
+}
+
+/* Dropdown */
+
+.dropdown-menu {
+  @apply shadow-lg rounded-sm z-50 w-full;
+}
+
+.dropdown-item {
+  @apply cursor-pointer w-full p-1;
+}
+
+.dropdown-item-active {
+  @apply text-gray-700;
+}
+
+/* Loading */
+
+.loading-background {
+  @apply bg-gray-700 opacity-75;
+}
+
+/* Radio */
+
+.radio {
+  @apply font-bold py-2 px-4 rounded;
+  min-width: 6rem;
+}
+
+.radio-check {
+  @apply hidden;
+}
+
+.radio-checked {
+  @apply text-gray-700;
+}
+
+.radio-label {
+  @apply w-full text-center p-0;
 }
