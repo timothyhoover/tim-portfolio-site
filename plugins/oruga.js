@@ -39,7 +39,6 @@ export default defineNuxtPlugin((nuxtApp) => {
       roundedClass: 'rounded',
       variantClass: 'input-',
       inputClass: (variant, context) => {
-        console.log(context.props.type)
         if (context.props.type === 'textarea') {
           return '!h-40'
         }

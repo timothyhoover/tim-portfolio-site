@@ -1,9 +1,9 @@
 <template lang="pug">
-main(class='flex justify-center md:justify-start w-full h-full')
-  section(class='flex justify-center items-center flex-col w-full h-full md:items-start md:justify-center md:w-8/12 xl:w-9/12')
+main(class='flex w-full')
+  section(class='flex justify-center items-center flex-col w-full h-full md:items-start md:justify-center md:w-9/12 xl:w-9/12 z-30')
     h1(class='text-3xl md:text-3xl lg:text-5xl font-black mb-8 text-center md:text-left')
       | Mission-driven full-stack engineer
-    p(class='text-lg w-10/12')
+    p(class='text-base lg:text-lg px-5 md:px-0 pr-5')
       | I’m currently based in Madrid, Spain as a software developer for Topic Talk Inglés
       | and a freelance web developer. I’ve worked with social media influencers as their
       | web developer (UX/UI) and design consultant and independent real estate companies building
@@ -16,6 +16,6 @@ main(class='flex justify-center md:justify-start w-full h-full')
       | new languages with my favorite apps Busuu, Memorise and Rosetta Stone.
   div(class='hidden md:block fixed w-3/12 max-h-screen -mt-8 -mr-10 top-0 right-0')
     img(src='../assets/img/html.png')
-  div(class='w-4/12 lg:w-3/12 hidden md:flex justify-end items-end fixed right-0 bottom-0')
+  div(class='w-52 lg:w-72 hidden md:flex justify-end items-end fixed right-0 bottom-0')
     img(src='../assets/img/tim.png')
 </template>

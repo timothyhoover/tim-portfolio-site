@@ -1,6 +1,6 @@
 <template lang="pug">
-main(class='flex flex-col justify-center items-center')
-  h1(class='text-3xl lg:text-5xl font-black w-full mb-5') Tech
+main(class='flex flex-col justify-center py-10')
+  h1(class='text-3xl lg:text-5xl font-black w-full lg:mb-5') Tech
     span(class='text-tim-green') Skills
   // html & css side by side in design
   div(class='grid grid-cols-1 lg:grid-cols-2 gap-16 mt-8')

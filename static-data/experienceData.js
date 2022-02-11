@@ -6,8 +6,8 @@ export const experienceData = {
   job1: {
     year: '2020 - Present',
     logoImage: TopicLogo,
-    companyName: 'Topic Talk',
-    position: 'Software Developer',
+    name: 'Topic Talk',
+    role: 'Software Developer',
     highlights: [
       'Built wireframes and UI using Adobe XD.',
       'Designed, coded, and tested an English evaluator (CRUD app) concept using React, Firebase, and Jest.',
@@ -19,8 +19,8 @@ export const experienceData = {
   job2: {
     year: '2018 - Present',
     logoImage: FreelanceLogo,
-    companyName: 'Freelance',
-    position: 'Web Developer / SEO / UI-UX',
+    name: 'Freelance',
+    role: 'Web Developer / SEO / UI-UX',
     highlights: [
       'Carried out UX / UI strategy for high-profile social media influencers (50k+ followers) such as the Lobxs sports group lead by Maigua Ojeda - lobxs.com',
       'Rebuilt real estate websites for both developers and estate agents improving their brand identity.',
@@ -31,8 +31,8 @@ export const experienceData = {
   job3: {
     year: '2014 - 2017',
     logoImage: UniversalLogo,
-    companyName: 'Universal Music',
-    position: 'Music Programmer / Producer',
+    name: 'Universal Music',
+    role: 'Music Programmer / Producer',
     highlights: [
       'Established a startup music development studio into a profitable business with an average of 2 new clients per month and repeat clients every 3-4 months.',
       'Planned band arrangements using cutting-edge digital instruments.',
