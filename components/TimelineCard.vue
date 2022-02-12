@@ -3,7 +3,7 @@ div(class='flex w-full h-auto mb-5 shadow-zinc-200 shadow-md rounded-lg p-7 lg:p
   div(class='flex flex-col h-full')
     div(class='flex items-center')
       div(class='pl-3 sm:p-0')
-        img(class="w-32" :src='imagePath')
+        img(class="w-36" :src='logo')
       h2(class='text-sm md:text-base font-extrabold') {{ props.item.name }}
       div(class='bg-tim-green w-48 h-0.5 mx-5')
       h2(class='text-xs md:text-base font-medium') {{ props.item.role }}
@@ -13,13 +13,13 @@ div(class='flex w-full h-auto mb-5 shadow-zinc-200 shadow-md rounded-lg p-7 lg:p
 </template>
 
 <script setup>
-  import { computed } from 'vue'
+  import { computed, ref } from 'vue'
   const props = defineProps({
     item: Object,
   })
 
-  const imagePath = computed(() => {
-    const imgUrl = new URL(props.item.logoImage, import.meta.url)
-    return imgUrl.pathname
+  const logo = ref()
+  watchEffect(async () => {
+    logo.value = `../assets/img/${props.item.logoImage}`
   })
 </script>

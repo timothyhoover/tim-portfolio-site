@@ -1,11 +1,7 @@
-import * as FreelanceLogo from '../assets/img/freelance-logo.png'
-import * as TopicLogo from '../assets/img/topic-talk-logo.png'
-import * as UniversalLogo from '../assets/img/universal-logo.png'
-
 export const experienceData = {
   job1: {
     year: '2020 - Present',
-    logoImage: TopicLogo,
+    logoImage: 'topic-talk-logo.png',
     name: 'Topic Talk',
     role: 'Software Developer',
     highlights: [
@@ -18,7 +14,7 @@ export const experienceData = {
 
   job2: {
     year: '2018 - Present',
-    logoImage: FreelanceLogo,
+    logoImage: 'freelance-logo.png',
     name: 'Freelance',
     role: 'Web Developer / SEO / UI-UX',
     highlights: [
@@ -30,7 +26,7 @@ export const experienceData = {
 
   job3: {
     year: '2014 - 2017',
-    logoImage: UniversalLogo,
+    logoImage: 'universal-logo.png',
     name: 'Universal Music',
     role: 'Music Programmer / Producer',
     highlights: [

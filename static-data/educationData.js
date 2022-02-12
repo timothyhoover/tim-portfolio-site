@@ -1,7 +1,7 @@
 export const educationData = {
   school1: {
     year: '2020 - 2022',
-    logoImage: '../assets/img/codex-logo.png',
+    logoImage: 'codex-logo.png',
     name: '',
     role: 'Full-Stack Agile Engineering',
     highlights: [
@@ -13,7 +13,7 @@ export const educationData = {
 
   school2: {
     year: '2011 - 2014',
-    logoImage: '../assets/img/john-moores-logo.png',
+    logoImage: 'john-moores-logo.png',
     name: '',
     role: 'Bachelor of Arts (Honours) Music',
     highlights: [
