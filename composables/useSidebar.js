@@ -1,8 +1,8 @@
 import { ref } from 'vue'
 
-const isOpen = ref(false)
+const isOpen = ref()
 
-export const useSidebar = (open) => {
+export const useSidebar = (open = true) => {
   open ? (isOpen.value = false) : (isOpen.value = true)
   return { isOpen }
 }

@@ -1,18 +1,18 @@
+import '../assets/css/main.css'
+import '../assets/css/tailwind-oruga.css'
+
 import Oruga from '@oruga-ui/oruga-next'
 import { defineNuxtPlugin } from '#app'
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(Oruga, {
-    iconPack: 'fas',
-    iconComponent: 'vue-fontawesome',
-    statusIcon: false,
     button: {
       override: true,
       rootClass: 'btn',
       variantClass: 'btn-',
       sizeClass: (size) => {
         if (size === 'small') {
-          return 'py-1 text-sm px-8'
+          return 'py-2 text-sm px-5'
         } else if (size === 'large') {
           return 'py-4 text-lg px-20'
         } else if (size === 'medium') {

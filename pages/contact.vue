@@ -1,6 +1,6 @@
 <template lang="pug">
-div(class="flex w-full h-full justify-center items-center")
-  form(@submit.prevent='submitForm' class="w-4/6 shadow-lg shadow-gray-200 rounded-lg space-y-4 p-10")
+div(class="max-w-screen-sm mx-auto px-4 py-10")
+  form(@submit.prevent='submitForm' class="shadow-lg shadow-gray-200 rounded-lg space-y-4 p-10")
     o-field(label='Name' variant='primary')
       o-input(v-model='formData.name', placeholder="Name", name="name")
     o-field(label='Last Name' variant='primary')

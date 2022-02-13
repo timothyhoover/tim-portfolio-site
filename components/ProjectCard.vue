@@ -1,22 +1,18 @@
 <template lang="pug">
-div(class='group flex flex-col rounded-md shadow-lg w-72 h-72 sm:w-60 sm:h-60 lg:w-48 lg:h-48 xl:w-56 xl:h-56 cursor-pointer hover:shadow-2xl transition duration-200 ease-in-out relative')
-  div(class='opacity-0 bg-black group-hover:opacity-60 absolute w-full h-full z-30 transition duration-200 ease-in-out rounded-md')
-  div(class='group-hover:opacity-100 opacity-0 flex flex-col items-center justify-end w-full h-full p-5 transition duration-200 ease-in-out z-40 absolute')
-    // Project Description
-    span(class='text-xs text-white') Language learning app with english level evaluator using firebase db
-    // Project Links (github and site)
-    div(class='flex items-center w-full h-full text-white')
-      img(src='../assets/img/github.png')
-      a(href='https://www.github.com/timothyhoover', class='text-xs w-full pl-3 hover:text-tim-green transition duration-1000 ease-in-out') Go to Repo
-    div(class='flex items-center w-full h-full text-white')
-      img(src='../assets/img/site-logo.png')
-      a(href='https://www.github.com/timothyhoover', class='text-xs w-full pl-3 hover:text-tim-green transition duration-1000 ease-in-out') Go to live site
-  // Project Photo
-  div(class='flex w-full h-full rounded-md')
-    img(src='../assets/img/evaly-example.png')
-  // Project Name and Number
-  div(class='flex justify-between items-end w-full h-full')
-    h3(class='group-hover:opacity-0 text-6xl font-medium transform translate-y-7 -translate-x-6 z-50 transition duration-200 ease-in-out absolute') 0
-      span(class='text-tim-green') 1
-    h2(class='px-4 py-2 text-xl font-medium w-full text-right') Evaly
+div(class='max-w-sm bg-white rounded-lg border border-gray-200 shadow-md')
+  a(href='#')
+    img(class='rounded-t-lg', src='../assets/img/evaly-example.png', alt='')
+  div(class='p-5')
+    a(href='#')
+      h5(class='mb-2 text-xl font-bold tracking-tight text-gray-900') Noteworthy technology acquisitions 2021
+    p(class='mb-3 text-sm text-gray-700') Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+    div(class="flex items-center justify-between")
+      o-button(variant='secondary' size='small')
+        span.mr-2 Check it out
+        ArrowNarrowRightIcon(class="w-5 h-5 inline")
+      img(class="h-10 w-10" src="../assets/img/github-logo.svg")
 </template>
+
+<script setup>
+  import { ArrowNarrowRightIcon } from '@heroicons/vue/solid'
+</script>

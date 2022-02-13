@@ -1,6 +1,6 @@
 <template lang="pug">
 div(class="z-30 relative")
-  div(:class='!isOpen ? "hidden" : ""' @click='isOpen = false' class="md:hidden w-screen h-screen bg-black bg-opacity-25 absolute link")
+  div(:class='!isOpen ? "hidden" : ""' @click='useSidebar(isOpen)' class="md:hidden w-screen h-screen bg-black bg-opacity-25 absolute link")
 div(aria-roledescription="mobile menu", class="relative md:flex h-screen overflow-hidden")
   // mobile menu bar
   div(class="bg-white shadow-md text-gray-100 flex justify-between items-center md:hidden w-full h-16 z-50")
